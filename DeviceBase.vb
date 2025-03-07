@@ -13,7 +13,6 @@ Namespace OWEN
 
         Protected Sub New()
             AddHandler QueryServerCompleted, AddressOf QueryServerCompletedHandler
-            AddHandler Measurements.CollectionChanged, Sub() Debug.WriteLine($"col chngd, len={Measurements.Count}") 'NotifyPropertyChanged(NameOf(Measurements))
         End Sub
 
         Public Shared Property CurDevType As DeviceType = DeviceType.Ukt38
